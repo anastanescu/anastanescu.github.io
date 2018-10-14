@@ -13,29 +13,48 @@ body{margin:40px auto;
      background:#fefefe;}
 
 
-h1,h3{line-height:1.2}
+h1,h3{
+    line-height:1.2;
+    font-size: 3vw;
+    }
 
 h2 {
     border-bottom: 1px solid #CCCCCC;
     color: #444;
-    font-size: 22px;
+    font-size: 1.6vw;
+    display: inline-block;
 }
 
 ul{list-style-type:none;
 margin-top: 1em;}
 
 
-.container {
-    float: right;
-}
-.center {
+.controls_center {
     margin-left: auto;
     margin-right: auto;
     display: block
 }
+
+.container_logo {
+    
+}
+
 .logo{
-height:32px;
-width:32px;
+    float:left;
+    height:auto;
+    width:6%;
+    margin: 0px 5px 5px 0px;
+}
+
+.content_text{
+    font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        max-width:70%;
+    }
 }
 
 </style> 
@@ -43,7 +62,7 @@ width:32px;
 
 <body>
 
-<div class="container">
+<div class="container_logo">
 <a href="https://www.tugraz.at/institutes/icg/home/"><img class="logo" src="res/ICG-Logo-Transparent.png" /></a>
 </div>
 
@@ -51,13 +70,15 @@ width:32px;
 
 <!https://www.tugraz.at/institutes/icg/home/>
 
+<div class="content_text">
 <p>The paper can be found <a href="res/paper.pdf">here<a>.</p>
-
-<div>
-<video width="95%" src="res/out.mp4" poster="video/slide1.png" controls class='center' onclick="this.play();"/>
 </div>
 
 <div>
+<video width="95%" src="res/out.mp4" poster="video/slide1.png" controls class='controls_center' onclick="this.play();"/>
+</div>
+
+<div class = "content_text">
 <p>Contact:
 <ul>
   <li>ana.stanescu at icg dot tugraz dot at</li>
